@@ -39,6 +39,7 @@
 }
 
 //===============MARGIN========================
+
 .m-right10 {
   margin-right: 10px;
 }
@@ -88,6 +89,12 @@
   font-weight: 500;
 }
 
+//================texto===============================
+
+.white-space {
+  white-space:normal;
+}
+
 //===============CURSOR POINTER=====================
 
 .pointer {
@@ -135,6 +142,10 @@
 
 .row-direction {
   flex-direction: row;
+}
+
+.wrap {
+  overflow-wrap: anywhere;
 }
 
 .stretch {
@@ -242,4 +253,11 @@ td {
 
 .width-none {
   width: 0 !important;
+}
+
+//============ Padding ===============
+
+.m-p5 {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }

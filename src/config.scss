@@ -1,0 +1,245 @@
+//??
+:root {
+	--primary: hsl(335, 86%, 48%);
+	--secondary: hsl(261, 86%, 35%);
+  --text-contrast: white;
+  --text:white;
+}
+//================LIMIT CHAR========================
+
+.limit-char {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 10ch;
+}
+
+//===============BORDER NONE=======================
+
+.border-none {
+  border: none !important;
+}
+
+//===============BORDER RADIUS========================
+.radius-5px {
+  border-radius: 5px;
+}
+
+.border-radius-top {
+  border-radius: 8px 8px 0px 0px !important;
+}
+
+.border-radius-bottom {
+  border-radius: 0px 0px 8px 8px !important;
+}
+
+//===============BOX SHADOW========================
+.box-shadow {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+//===============MARGIN========================
+.m-right10 {
+  margin-right: 10px;
+}
+
+.m-top10 {
+  margin-top: 10px;
+}
+
+.m-left {
+  margin-left: 30px;
+}
+
+//==============COLUMN========================
+.column {
+  flex-direction: column;
+}
+
+//==============FONT WEIGHT BOLD========================
+
+.bold {
+  font-weight: 700 !important;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+}
+
+//==============FONT POPPINS========================
+
+.font-poppins {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+//==============FONT SOURCE SANS PRO========================
+
+.font-source-sans-pro {
+  font-family: "Source Sans Pro";
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+//===============FONT ROBOTO========================
+
+.font-roboto {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+//===============CURSOR POINTER=====================
+
+.pointer {
+  cursor: pointer;
+}
+
+//==============Display========================
+
+.justify-end {
+  display: flex;
+  justify-content: end;
+}
+
+.justify-start {
+  display: flex;
+  justify-content: start;
+}
+
+.center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.row-direction {
+  flex-direction: row;
+}
+
+.stretch {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 6px;
+}
+
+td {
+  font-weight: 400;
+  padding-left: 1.2rem;
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+// ========= Color =============
+
+.color-text {
+  color: var(--text) !important;
+}
+.color-text-contrast {
+  color: var(--text-contrast) !important;
+}
+
+.color-text-black {
+  color: #000 !important;
+}
+.text-red {
+  color: red !important;
+}
+.text-green {
+  color: green !important;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secundary {
+  color: var(--secundary)
+}
+
+.bg-primary {
+  color: var(--text-contrast);
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  color: var(--text-contrast);
+  background-color: var(--secondary) !important;
+}
+
+.bg-lilas {
+  background-color: #4f26b7;
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
+
+.btn-in-modal {
+  min-width: 240px !important;
+}
+
+//======== Gap =============
+
+.gap {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap500 {
+  gap: 500px;
+}
+
+//======== Icon ==============
+
+.iconX {
+  transition: transform 0.4s, color 0.3s;
+  transform: scale(1.2);
+  margin-right: 10px;
+
+  &:hover {
+    transition: transform 0.4s, color 0.3s;
+    transform: scale(1.2) rotate(90deg) translate(-3px, -3px);
+    color: var(--secondary);
+  }
+}
+
+//======== Min Height ==============
+
+.min-height-none {
+  min-height: 0 !important;
+}
+
+//======== Min Height ==============
+
+.width-100 {
+  width: 100%;
+}
+
+.width-none {
+  width: 0 !important;
+}

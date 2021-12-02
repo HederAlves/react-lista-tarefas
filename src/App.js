@@ -24,15 +24,15 @@ export default function App() {
 
   return (
     
-    <div className="container center column box-form form-input bg-secondary">
+    <div className="container center column  bg-secondary">
           <h1 className="title-form bold color-primary" >Lista de Tarefas</h1>
       <form className="" onSubmit={submitNovaTarefa}>
         
-            <label htmlfor="novaTarefa" className="title-form">Nova Tarefa</label>
+            <label htmlfor="novaTarefa" className="title-form center m-p5">Nova Tarefa</label>
        
         <div className="">
-          <input type="text" name="novaTarefa" id="novaTarefa" className="" value={novaTarefa} onChange={changeNovaTarefa} />
-          <button type="submit" className="stretch">Criar Tarefa</button>
+          <input type="text" className="stretch"  name="novaTarefa" id="novaTarefa" value={novaTarefa} onChange={changeNovaTarefa} />
+          <button type="submit" className="stretch flex">Criar Tarefa</button>
       </div>
       </form>
 
@@ -47,14 +47,12 @@ export default function App() {
 
   function mostrarItemLista(nomeTarefa, indice, removeTarefa) {
     return (
-      <li className="form-box-title bg-primary" key={indice}>
-        <div className="flex">
-            <div className="">
-              {nomeTarefa}
-            </div>
-            <div className="flex">
-             <button type="button" className="form-box-title" onClick={function() { removeTarefa(indice); }}>X</button>
-             </div>
+      <li className="m-p5 bg-primary" key={indice}>
+        <div className="flex m-left between  ">
+
+           <p className="wrap m-p5">{nomeTarefa}</p>
+             <button type="button"  className="bold" onClick={function() { removeTarefa(indice); }}>X</button>
+
         </div>
       </li>
     );

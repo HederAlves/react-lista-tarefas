@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './config.scss';
 import './template.scss';
+import './index.css';
 
 export default function App() {
   const [novaTarefa, setNovaTarefa] = React.useState('');
